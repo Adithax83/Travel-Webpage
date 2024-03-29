@@ -1,0 +1,304 @@
+:root{
+    --primary-color:#669ccb;
+    --primary-color-dark:#5681a7;
+    --secondary-color:#e8f1fa;
+    --text-dark:#282d31;
+    --text-light:#767268
+
+    --max-width: 1200px;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.section-container{
+    padding: 7rem 4rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.section-subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    max-width: var(--max-width);
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#ffffff;
+}
+.nav-links{
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+.links{
+    color:#ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(49,92,132,.4), rgba(49,92,132,.4)),url(./assets/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .section-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    color:#ffffff;
+}
+.header-container h1{
+    font-size: 3.5rem;
+    font-size: 400;
+    line-height: 5rem;
+}
+.header-container p{
+    align-items: center;
+}
+.header-container button{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color:#ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.header-container button:hover{
+    background-color: var(--primary-color-dark);
+}
+.travel-container{
+    background-color: var(--secondary-color);
+}
+.travel-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+.country-grid{
+    background-color:#f3f4f6;
+}
+.country-name i{
+    font-size: 1.2rem;
+}
+.country-name span{
+    font-style: italic;
+}
+.country-name{
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+.banner-container{
+    background-image: linear-gradient(rgba(35, 71, 103, 0.5),rgba(35, 71, 103, 0.5)),url(./assets/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-container .section-container{
+    padding: 10rem 5rem;
+    display: flex;
+    justify-content: end;
+}
+.banner-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    color:#ffffff;
+}
+.banner-content h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.banner-content button{
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+.display-container{
+    background-color: var(--secondary-color);
+}
+.display-container :is(.section-title, .section-subtitle){
+    color: var(--text-dark);
+}
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.display-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: 0.5rem;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+.display-card i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.display-card h4{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    columns: var(--text-dark);
+}
+.display-card p{
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    color: var(--text-dark);
+}
+.display-card-grid-1{
+    grid-area: 1/1/3/3;
+}
+footer{
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+}
+footer .section-container{
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+footer h4{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-icons i{
+    padding: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+footer p{
+    font-style: italic;
+}
+@media(min-width:640px){
+    .nav-links{
+        display: flex;
+    }
+    header .section-container{
+        justify-content: flex-start;
+    }
+    .header-container{
+        max-width:530px;
+        align-items: flex-start;
+    }
+    .header-container p{
+        text-align: left;
+    }
+    .travel-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .display-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .display-card{
+        gap: 0;
+    }
+    .display-card i{
+        font-size: 1.75rem;
+    }
+    .display-card h4{
+        font-size: 1rem;
+    }
+    .display-card p{
+        font-size: 0.7rem;
+    }
+}
+@media(min-width:768px){
+    .banner-container ,.section-container{
+        justify-content: flex-end;
+    }
+    .banner-content{
+        align-items: flex-end;
+        text-align: right;
+        max-width: 800px;
+    }
+    .display-card{
+        gap: 0.5rem;
+    }
+    .display-card i{
+        font-size: 2.5rem;
+    }
+    .display-card p{
+        font-size: 0.8rem;
+    }
+}
+@media(mid-width:1024){
+    .display-card{
+        gap: 1rem;
+    }
+    .display-card i{
+        font-size: 3rem;
+    }
+    .display-card h4{
+        font-size: 1.5rem;
+    }
+    .display-card p{
+        font-size: 1rem;
+    }
+}
